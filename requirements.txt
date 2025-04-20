@@ -1,5 +1,2 @@
 streamlit
 google.generativeai<=0.8.4
-random
-time
-json
