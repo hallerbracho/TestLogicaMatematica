@@ -35,7 +35,7 @@ model = genai.GenerativeModel(
     model_name="gemini-2.0-flash", # Usando gemini-1.5-flash
     generation_config={
         "response_mime_type": "application/json",
-        "temperature": 0.7 # Añadir temperatura para algo de variabilidad
+        "temperature": 1 # Añadir temperatura para algo de variabilidad
     },
     safety_settings=[ # Añadir settings de seguridad si es necesario
         {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
