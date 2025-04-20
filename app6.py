@@ -48,9 +48,10 @@ model = genai.GenerativeModel(
 # --- Funciones ---
 
 def generate_crypto_question_google():
-    """Llama a la API de Google Gemini para generar una pregunta de criptografía con explicación."""
+    """Llama a la API de Google Gemini para generar una pregunta con explicación."""
     prompt = f"""
-        Genera una única pregunta de quiz sobre la asignatura Fundamentos elementales de la Teoría de Conjuntos para estudiantes del primer semestre de la Licenciatura en Computación. La pregunta debe venir acompañada con un escenario teórico (máximo 1-2 párrafos) relacionado con la pregunta. 
+        Genera una única pregunta de quiz sobre la asignatura Fundamentos elementales de la Teoría de Conjuntos para estudiantes de la Facultad de Ciencias.
+        La pregunta debe venir acompañada con un escenario teórico (máximo 1-2 párrafos) relacionado con la pregunta. 
         La pregunta debe ser de tipo selección múltiple ('mc') con 5 opciones.
         Responde ÚNICAMENTE con un objeto JSON válido que se adhiera ESTRICTAMENTE al siguiente formato, sin texto adicional antes o después del JSON.
 
@@ -60,7 +61,7 @@ def generate_crypto_question_google():
           "type": "mc" | "tf",
           "options": ["Opción A", "Opción B", "Opción Correcta", "Opción D", "Opcion E"],
           "answer": "Texto de la Opción Correcta",
-          "difficulty": Muy fácil" | "Fácil" | "Medio" | "Difícil", "Muy Difícil",
+          "difficulty": "Muy fácil" | "Fácil" | "Medio" | "Difícil", "Muy Difícil",
           "explanation": "Explicación detallada (2-4 frases) de por qué la respuesta es correcta y, opcionalmente, contexto relevante o por qué las otras opciones son incorrectas."
         }}
 
@@ -145,7 +146,7 @@ if 'current_question' not in st.session_state:
 # --- Diseño de la Interfaz ---
 with st.container():
     st.title("Quiz IA Automático") # Título actualizado
-    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** generadas por IA y pon a prueba tus conocimientos de Lógica Matemática.") # Desc actualizada
+    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** generadas por IA y pon a prueba tus conocimientos.") # Desc actualizada
     #st.divider()
 
 main_interaction_area = st.container(border=True)
