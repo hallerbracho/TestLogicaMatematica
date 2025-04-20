@@ -145,7 +145,7 @@ if 'current_question' not in st.session_state:
 # --- Diseño de la Interfaz ---
 with st.container():
     st.title("Quiz IA Automático") # Título actualizado
-    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** generadas por IA y pon a prueba tus conocimientos de Linux.") # Desc actualizada
+    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** generadas por IA y pon a prueba tus conocimientos de Lógica Matemática.") # Desc actualizada
     #st.divider()
 
 main_interaction_area = st.container(border=True)
@@ -336,4 +336,4 @@ with score_area:
          # st.caption(f"Preguntas únicas generadas (sesión): {len(st.session_state.get('asked_questions_set', set()))}") # Optional debug metric
 
 # --- Footer --- (sin cambios)
-st.caption("Aplicación creada por el Prof. Haller Bracho usando la librería Streamlit de Python y la API de Google AI Studio (Gemini).")
+st.caption("Aplicación creada usando la librería Streamlit de Python y la API de Google AI Studio (Gemini).")
