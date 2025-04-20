@@ -1,6 +1,5 @@
 streamlit
-pip
-google-genai
+google.generativeai
 random
 time
 json
