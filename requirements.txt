@@ -1,4 +1,5 @@
 streamlit
+pip
 google-genai
 random
 time
