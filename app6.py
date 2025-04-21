@@ -6,7 +6,7 @@ import time
 
 # --- Configuración de la Página y API Key ---
 st.set_page_config(
-    page_title="Quiz IA Automático", # Título actualizado
+    page_title="Quiz para practicar", # Título actualizado
     page_icon="💡", # Icono actualizado
     layout="centered"
 )
@@ -35,7 +35,7 @@ model = genai.GenerativeModel(
     model_name="gemini-2.0-flash-lite", # Usando gemini-1.5-flash
     generation_config={
         "response_mime_type": "application/json",
-        "temperature": 0.1 # Añadir temperatura para algo de variabilidad
+        "temperature": 1 # Añadir temperatura para algo de variabilidad
     },
     safety_settings=[ # Añadir settings de seguridad si es necesario
         {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
@@ -61,7 +61,7 @@ def generate_crypto_question_google():
           "type": "mc" | "tf",
           "options": ["Opción A", "Opción B", "Opción Correcta", "Opción D", "Opcion E"],
           "answer": "Texto de la Opción Correcta",
-          "difficulty": "Muy fácil" | "Fácil" | "Medio" | "Difícil", "Muy Difícil",
+          "difficulty": "Fácil" | "Intermedio" | "Difícil",
           "explanation": "Explicación detallada (2-4 frases) de por qué la respuesta es correcta y, opcionalmente, contexto relevante o por qué las otras opciones son incorrectas."
         }}
 
