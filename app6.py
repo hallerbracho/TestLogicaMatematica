@@ -145,8 +145,8 @@ if 'current_question' not in st.session_state:
 
 # --- Diseño de la Interfaz ---
 with st.container():
-    st.title("Quiz IA Automático") # Título actualizado
-    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** generadas por IA y pon a prueba tus conocimientos.") # Desc actualizada
+    st.title("Quiz para practicar") # Título actualizado
+    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** aleatorias y pon a prueba tus conocimientos.") # Desc actualizada
     #st.divider()
 
 main_interaction_area = st.container(border=True)
