@@ -146,7 +146,7 @@ if 'current_question' not in st.session_state:
 # --- Diseño de la Interfaz ---
 with st.container():
     st.title("Preguntas para practicar") # Título actualizado
-    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** aleatorias sobre la clase de la semana.") # Desc actualizada
+    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** aleatorias sobre los conceptos visto en la clase de la semana.") # Desc actualizada
     #st.divider()
 
 main_interaction_area = st.container(border=True)
