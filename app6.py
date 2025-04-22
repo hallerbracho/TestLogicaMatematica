@@ -50,7 +50,7 @@ model = genai.GenerativeModel(
 def generate_crypto_question_google():
     """Llama a la API de Google Gemini para generar una pregunta con explicación."""
     prompt = f"""
-        Genera una única pregunta de quiz sobre ejercicios numéricos para convertir conjuntos por extensión a conjuntos por comprensión y viceversa.
+        Genera una única pregunta de quiz sobre conversión de conjuntos por extensión a conjuntos por comprensión y viceversa.
         La pregunta debe venir acompañada con un escenario teórico (máximo 1-2 párrafos) relacionado con la pregunta. 
         La pregunta debe ser de tipo selección múltiple ('mc') con 5 opciones.
         Responde ÚNICAMENTE con un objeto JSON válido que se adhiera ESTRICTAMENTE al siguiente formato, sin texto adicional antes o después del JSON.
