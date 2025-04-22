@@ -145,7 +145,7 @@ if 'current_question' not in st.session_state:
 
 # --- Diseño de la Interfaz ---
 with st.container():
-    st.title("Quiz para practicar los conceptos de la semana") # Título actualizado
+    st.title("Practica los conceptos de la semana") # Título actualizado
     st.markdown(f"Responde **{st.session_state.max_questions} preguntas** aleatorias y pon a prueba tus conocimientos.") # Desc actualizada
     #st.divider()
 
