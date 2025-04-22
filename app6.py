@@ -67,7 +67,7 @@ def generate_crypto_question_google():
 
         Asegúrate de que para 'mc', el valor de 'answer' sea la respuesta correcta y coincida exactamente con uno de los strings en el array 'options'.
         La explicación debe ser clara, concisa y educacional.
-        La pregunta debe ser diferente a las preguntas generadas anteriormente en esta sesión de quiz.
+        La pregunta debe ser totalmente diferente a las preguntas generadas anteriormente en esta sesión de quiz. Si es similar, debes generar otra. 
         Preguntas ya usadas (últimas 10 para contexto): {list(st.session_state.get('asked_questions_set', set()))[-10:]}
     """
     try:
