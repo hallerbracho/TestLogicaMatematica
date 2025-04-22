@@ -32,7 +32,7 @@ GOOGLE_API_KEY="TU_CLAVE_AQUI"
 # Asegúrate de que tu API Key tenga acceso a este modelo si usas una gratuita.
 # Si no, puedes probar con gemini-1.0-pro, aunque puede ser menos consistente con JSON.
 model = genai.GenerativeModel(
-    model_name="gemini-2.5-pro-exp-03-25", # Usando gemini-1.5-flash
+    model_name="gemini-1.5-flash-8b-latest", # Usando gemini-1.5-flash
     generation_config={
         "response_mime_type": "application/json",
         "temperature": 1 # Añadir temperatura para algo de variabilidad
