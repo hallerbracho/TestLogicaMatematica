@@ -145,7 +145,7 @@ if 'current_question' not in st.session_state:
 
 # --- Diseño de la Interfaz ---
 with st.container():
-    st.title("Quiz para practicar") # Título actualizado
+    st.title("Quiz para practicar los conceptos de la semana") # Título actualizado
     st.markdown(f"Responde **{st.session_state.max_questions} preguntas** aleatorias y pon a prueba tus conocimientos.") # Desc actualizada
     #st.divider()
 
@@ -337,4 +337,4 @@ with score_area:
          # st.caption(f"Preguntas únicas generadas (sesión): {len(st.session_state.get('asked_questions_set', set()))}") # Optional debug metric
 
 # --- Footer --- (sin cambios)
-st.caption("Aplicación creada usando la librería Streamlit de Python y la API de Google AI Studio (Gemini).")
+st.caption("Aplicación creada para los estudiantes de la Licenciatura en Computación de la Facultad Experimental de Ciencias de La Universidad del Zulia.")
