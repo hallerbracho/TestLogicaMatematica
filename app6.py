@@ -144,8 +144,8 @@ if 'current_question' not in st.session_state:
 
 # --- Diseño de la Interfaz ---
 with st.container():
-    st.title("Preguntas para practicar") # Título actualizado
-    st.markdown(f"Responde **{st.session_state.max_questions} preguntas** aleatorias sobre los conceptos vistos en la clase de la semana.") # Desc actualizada
+    st.title("Lógica Matemática") # Título actualizado
+    st.markdown(f"**{st.session_state.max_questions} preguntas** para practicar los conceptos vistos en clase.") # Desc actualizada
     #st.divider()
 
 main_interaction_area = st.container(border=True)
@@ -336,4 +336,4 @@ with score_area:
          # st.caption(f"Preguntas únicas generadas (sesión): {len(st.session_state.get('asked_questions_set', set()))}") # Optional debug metric
 
 # --- Footer --- (sin cambios)
-st.caption("Aplicación creada para los estudiantes de la Licenciatura en Computación de la Facultad Experimental de Ciencias de La Universidad del Zulia.")
+st.caption("Licenciatura en Computación- Facultad Experimental de Ciencias - La Universidad del Zulia.")
