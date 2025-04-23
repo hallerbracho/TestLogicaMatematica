@@ -144,7 +144,7 @@ if 'current_question' not in st.session_state:
 
 # --- Diseño de la Interfaz ---
 with st.container():
-    st.title("Lógica Matemática") # Título actualizado
+    st.title("Asignatura: Lógica Matemática") # Título actualizado
     st.markdown(f"**{st.session_state.max_questions} preguntas** para practicar los conceptos vistos en clase.") # Desc actualizada
     #st.divider()
 
