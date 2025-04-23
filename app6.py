@@ -336,4 +336,4 @@ with score_area:
          # st.caption(f"Preguntas únicas generadas (sesión): {len(st.session_state.get('asked_questions_set', set()))}") # Optional debug metric
 
 # --- Footer --- (sin cambios)
-st.caption("Licenciatura en Computación- Facultad Experimental de Ciencias - La Universidad del Zulia.")
+st.caption("Licenciatura en Computación - Facultad Experimental de Ciencias - La Universidad del Zulia.")
