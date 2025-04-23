@@ -50,14 +50,13 @@ model = genai.GenerativeModel(
 def generate_crypto_question_google():
     """Llama a la API de Google Gemini para generar una pregunta con explicación."""
     prompt = f"""
-        Genera una única pregunta de quiz sobre la temática: Conjuntos por Extensión y Conjuntos por Comprensión.
-        La pregunta debe venir acompañada con un escenario teórico (máximo 1-2 párrafos) relacionado con la pregunta. 
+        Genera una única pregunta de quiz sobre la temática: Conjuntos por Extensión y Conjuntos por Comprensión.        
         La pregunta debe ser de tipo selección múltiple ('mc') con 5 opciones.
         Responde ÚNICAMENTE con un objeto JSON válido que se adhiera ESTRICTAMENTE al siguiente formato, sin texto adicional antes o después del JSON.
 
         Formato Requerido:
         {{
-          "question": "Escenario teórico y, seguido de un salto de línea, Texto de la pregunta (en negritas)",
+          "question": "Texto de la pregunta (en negritas)",
           "type": "mc" | "tf",
           "options": ["Opción A", "Opción B", "Opción Correcta", "Opción D", "Opcion E"],
           "answer": "Texto de la Opción Correcta",
