@@ -50,7 +50,7 @@ model = genai.GenerativeModel(
 def generate_crypto_question_google():
     """Llama a la API de Google Gemini para generar una pregunta con explicación."""
     prompt = f"""
-        Genera una única pregunta de razonamiento relacionado con conjuntos por extensión y comprensión para estudiantes de lógica matemática de la Licenciatura en Computación. 
+        Genera una única pregunta teórica relacionado con conjuntos por extensión y comprensión para estudiantes de lógica matemática de la Licenciatura en Computación. 
         La pregunta debe ser de tipo selección múltiple ('mc') con 5 opciones.
         Responde ÚNICAMENTE con un objeto JSON válido que se adhiera ESTRICTAMENTE al siguiente formato, sin texto adicional antes o después del JSON.
 
