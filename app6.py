@@ -50,7 +50,7 @@ model = genai.GenerativeModel(
 def generate_crypto_question_google():
     """Llama a la API de Google Gemini para generar una pregunta con explicación."""
     prompt = f"""
-        Genera una única pregunta de quiz sobre la asignatura Fundamentos de la Teoría de Conjuntos. 
+        Genera una única pregunta de quiz sobre la asignatura Fundamentos prácticos de la Teoría de Conjuntos. 
         La pregunta debe ser de tipo selección múltiple ('mc') con 5 opciones.
         Responde ÚNICAMENTE con un objeto JSON válido que se adhiera ESTRICTAMENTE al siguiente formato, sin texto adicional antes o después del JSON.
 
