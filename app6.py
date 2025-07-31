@@ -67,7 +67,7 @@ def generate_crypto_question_google():
         Asegúrate de que para 'mc', el valor de 'answer' sea la respuesta correcta y coincida exactamente con uno de los strings en el array 'options'.
         La explicación debe ser clara, extensa, educacional y en tono académico.
         La pregunta debe ser totalmente diferente a las preguntas generadas anteriormente en esta sesión de quiz. Si es similar, debes generar otra. 
-        Preguntas ya usadas (últimas 10 para contexto): {list(st.session_state.get('asked_questions_set', set()))[-10:]}
+        Preguntas ya usadas (últimas 5 para contexto): {list(st.session_state.get('asked_questions_set', set()))[-5:]}
     """
     try:
         # st.write("... Llamando a Google AI para pregunta+explicación ...") # Debug
@@ -138,7 +138,7 @@ if 'current_question' not in st.session_state:
     st.session_state.feedback = None
     st.session_state.correct_count = 0
     st.session_state.total_questions = 0 # Number of questions answered so far
-    st.session_state.max_questions = 10 # <<< NUEVO: Total de preguntas en el quiz
+    st.session_state.max_questions = 5 # <<< NUEVO: Total de preguntas en el quiz
     st.session_state.quiz_finished = False # <<< NUEVO: Bandera para saber si el quiz terminó
     st.session_state.asked_questions_set = set() # To keep track of questions asked in this session
 
